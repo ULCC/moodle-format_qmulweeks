@@ -52,7 +52,7 @@ class backup_format_qmulweeks_plugin extends backup_format_plugin {
         $pluginwrapper->add_child($plugindimension);
 
         // set source to populate the data
-        $plugindimension->set_source_table('qmultopics_newssettings', array('courseid' => backup::VAR_PARENTID));
+        $plugindimension->set_source_table('format_qmultopics_news', array('courseid' => backup::VAR_PARENTID));
 
         return $plugin;
     }
